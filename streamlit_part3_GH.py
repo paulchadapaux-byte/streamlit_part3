@@ -3,6 +3,8 @@ import pandas as pd
 import streamlit_authenticator as stauth
 from streamlit_authenticator import Authenticate
 from streamlit_option_menu import option_menu
+from pathlib import Path
+
 
 accounts= {'usernames': {}}
 BASE_DIR = Path(__file__).resolve().parent
