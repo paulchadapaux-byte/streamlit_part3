@@ -1,0 +1,3 @@
+name,password,email,failed_login_attemps,logged_in,role
+Paul,WCS2026,paul@gmail.com,0,False,user
+root,rootMDP,admin@gmail.com,0,False,admin
