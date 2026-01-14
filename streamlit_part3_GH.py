@@ -5,7 +5,8 @@ from streamlit_authenticator import Authenticate
 from streamlit_option_menu import option_menu
 
 accounts= {'usernames': {}}
-df_accounts= pd.read_csv('C:/Users/paulc/Documents/VS CODE/Streamlit/accounts.csv')
+BASE_DIR = Path(__file__).resolve().parent
+df_accounts = pd.read_csv(BASE_DIR / "accounts.csv")
 for index, row in df_accounts.iterrows():
     username= row['name']
     accounts['usernames'][username]= row.to_dict()
